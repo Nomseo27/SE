@@ -73,7 +73,7 @@ if( $conn ) {
     if( $stmt === false) {
         die( print_r( sqlsrv_errors(), true) );
     }
-    else echo "inserted"
+    else echo header("Location: bedroom.php");
     //if correct redirect to a admin page
-   
+
 ?>

@@ -1,256 +1,595 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!--Import Google Icon Font-->
-        <link href="../../css/icon.css" rel="stylesheet">
-        <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="../../css/materialize.min.css"  media="screen,projection"/>
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <script type="text/javascript">
-             function resizeIframe(id) {
-                alert(here);
-				var obj = document.getElementById(id);
-				var obj.style.height = obj.contentWindow.document.body.clientHeight + "px"; 
-			}
-        </script>
-    </head>
-    <body class="fame" onload="resizeIframe('frame');">
-        <!--Import jQuery before materialize.js-->
-        <script type="text/javascript" src="../../js/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="../../js/materialize.min.js"></script>
+<html lang="en">
+
+<!--================================================================================
+	Item Name: Materialize - Material Design Admin Template
+	Version: 2.2
+	Author: GeeksLabs
+	Author URL: http://www.themeforest.net/user/geekslabs
+================================================================================ -->
+
+
+<!-- Mirrored from demo.geekslabs.com/materialize/v2.2/layout01/table-data.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 25 Feb 2016 14:11:59 GMT -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+  <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+  <title>Administrator | NFCTEL</title>
+
+  <!-- Favicons-->
+  <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+  <!-- Favicons-->
+  <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+  <!-- For iPhone -->
+  <meta name="msapplication-TileColor" content="#00bcd4">
+  <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+  <!-- For Windows Phone -->
+
+
+  <!-- CORE CSS-->
+  
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- Custome CSS-->    
+    <link href="css/custom-style.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="../../../../cdn.datatables.net/1.10.6/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  
+
+
+  <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+  <link href="css/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/data-tables/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+</head>
+
+<body>
+  <!-- Start Page Loading -->
+  <div id="loader-wrapper">
+      <div id="loader"></div>        
+      <div class="loader-section section-left grey darken-4"></div>
+      <div class="loader-section section-right grey darken-4"></div>
+  </div>
+  <!-- End Page Loading -->
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START HEADER -->
+  <header id="header" class="page-topbar">
+        <!-- start header nav-->
         <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper teal">
-                <a href="#!" class="brand-logo"><img src="../../images/hotellogoSmall.png" alt="" class="circle responsive-img" id="logimg" style="max-width: 80%"></a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <div class="right hide-on-med-and-down valign-wrapper">
-                    <!-- Dropdown Trigger -->
-                  <a class='dropdown-button btn truncate center' href='#' data-activates='dropdown1' data-beloworigin="true" style="margin-right: 20px;top:0px;"><img src="../../images/login.jpg" alt="" class="circle responsive-img lext" style="max-width: 20px; margin-right: 20px;margin-top:5px;">User</a>
-
-                  <!-- Dropdown Structure -->
-                  <ul id='dropdown1' class='dropdown-content'>
-                    <li><a href="#!">one</a></li>
-                    <li><a href="#!">two</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#!">Logout</a></li>
-                  </ul>
-                    <a href="member.php"><img class="responsive-img" src="../../images/registerSmall.png" style="padding-bottom:0px;">
-                        </a>
-                    <a href="event.html"><img class="responsive-img" src="../../images/eventSmall.png"></a>
-                    <a href="setting.html"><img class="responsive-img" src="../../images/settingsWSmall.png"></a>
+            <nav class="grey darken-4">
+                <div class="nav-wrapper">                    
+                    
+                    <ul class="left">                      
+                      <li><h1 class="logo-wrapper"><a href="index-2.html" class="brand-logo darken-1"><img src="images/nfctellogo.png"></a> <span class="logo-text">Materialize</span></h1></li>
+                    </ul>
+                    <ul class="right hide-on-med-and-down">                        
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen pink-text"><i class="mdi-social-cake"></i></a>
+                        </li>
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light"><i class="mdi-social-person-add pink-text"></i></a>
+                        </li>                        
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light"><i class="mdi-social-location-city pink-text"></i></a>
+                        </li>                        
+                        <li><a href="#" data-activates="chat-out" class="waves-effect waves-block waves-light chat-collapse"><i class="mdi-communication-chat pink-text"></i></a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="side-nav" id="mobile-demo">
-                    <div class="row">
+            </nav>
+        </div>
+        <!-- end header nav-->
+  </header>
+  <!-- END HEADER -->
 
-                            <div class="col s12" style="background: url(../../images/cover.png); height: 200px">
-                                <div class="align"><img src="../../images/login.jpg" alt="" class="circle responsive-img" id="logimg" style="margin: 10px;">
-                                </div>
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START MAIN -->
+  <div id="main">
+    <!-- START WRAPPER -->
+    <div class="wrapper">
+
+      <!-- START LEFT SIDEBAR NAV-->
+      <aside id="left-sidebar-nav">
+        <ul id="slide-out" class="side-nav fixed leftside-navigation grey darken-4">
+            <li class="user-details cyan darken-2">
+                <div class="row">
+                    <div class="col col s4 m4 l4">
+                        <img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-image">
+                    </div>
+                    <div class="col col s8 m8 l8">
+                        <ul id="profile-dropdown" class="dropdown-content grey darken-4 ">
+                            <li ><a href="#" class="pink-text text-lighten-3"><i class="mdi-action-face-unlock pink-text text-lighten-2"></i> Profile</a>
+                            </li>
+                            <li><a href="#" class="pink-text text-lighten-3"><i class="mdi-action-settings pink-text text-lighten-2"></i> Settings</a>
+                            </li>
+                            <li><a href="#" class="pink-text text-lighten-3"><i class="mdi-communication-live-help pink-text text-lighten-2"></i> Help</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#" class="pink-text text-lighten-3"><i class="mdi-action-lock-outline pink-text text-lighten-2"></i> Lock</a>
+                            </li>
+                            <li><a href="#" class="pink-text text-lighten-3"><i class="mdi-hardware-keyboard-tab pink-text text-lighten-2"></i> Logout</a>
+                            </li>
+                        </ul>
+                        <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">John Doe<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                        <p class="user-roal">Administrator</p>
+                    </div>
+                </div>
+            </li>
+            <li class="bold"><a href="adminhome.php" class="waves-effect waves-pink pink-text"><i class="mdi-action-dashboard"></i> Dashboard</a>
+            </li>
+            <li class="bold"><a href="app-email.html" class="waves-effect waves-pink pink-text"><i class="mdi-communication-email"></i> Mailbox <span class="new badge">4</span></a>
+            </li>
+            <li class="bold"><a href="member.php" class="waves-effect waves-pink pink-text"><i class="mdi-social-person-add "></i> Registration</a>
+            </li>
+            <li class="bold"><a href="guest.php" class="waves-effect waves-pink pink-text"><i class="mdi-maps-directions-walk"></i> Guest</a>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion grey darken-4">
+                    <li class="bold"><a class="collapsible-header waves-effect waves-pink pink-text"><i class="mdi-social-location-city"></i> Rooms</a>
+                        <div class="collapsible-body grey darken-3">
+                            <ul>
+                                <li><a href="bedroom.php" class="pink-text text-lighten-4">Bed Rooms</a>
+                                </li>                                        
+                                <li><a href="function.php" class="pink-text text-lighten-4">Function Rooms</a>
+                                </li>
+                                <li><a href="amenities.php" class="pink-text text-lighten-4">Amenities</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-pink grey darken-4 pink-text"><i class="mdi-content-add-circle"></i>Booking Confirmation</a>
+                        <div class="collapsible-body grey darken-3">
+                            <ul>
+                                <li><a href="ui-buttons.html" class="pink-text text-lighten-4">Events</a>
+                                </li>
+                                <li><a href="ui-badges.html" class="pink-text text-lighten-4">Bed Rooms</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header waves-effect waves-pink grey darken-4 pink-text"><i class="mdi-notification-event-note l"></i> Reports</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="table-basic.html" class="pink-text text-lighten-4">Sales Report</a>
+                                </li>
+                                <li class="active"><a href="table-data.html" class="pink-text text-lighten-4">Data Tables</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>  
+                </ul>
+            </li>
+            
+        </ul>
+        <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only pink"><i class="mdi-navigation-menu grey-text text-darken-4"></i></a>
+      </aside>
+      <!-- END LEFT SIDEBAR NAV-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+      <!-- START CONTENT -->
+      <section id="content">
+        
+        <!--breadcrumbs start-->
+        <div id="breadcrumbs-wrapper" class=" grey lighten-2">
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <h5 class="breadcrumbs-title">Member Maintenance</h5>
+                <ol class="breadcrumb">
+                    <li><a href="index-2.html" class="pink-text">Dashboard</a></li>
+                    <li class="active">Registration</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--breadcrumbs end-->
+        
+
+        <!--start container-->
+        <div class="container">
+          <div class="section">
+
+            <!--DataTables example Row grouping-->
+            <div id="row-grouping" class="section">
+              <h4 class="header">Members</h4>
+              
+                <div class="col s12 m8 l9">
+                  <table id="data-table-simple" class="display" cellspacing="0" width="100%">
+                      <thead>
+                        <tr>
+                            <th>Member ID</th>
+                            <th>Username</th>
+                            <th>Password</th>
+                            <th>Last Name</th>
+                            <th>First Name</th>
+                            <th>Middle Name</th>
+                            <th>Validation of Membership</th>
+                            <th>Expiration of Membership</th>
+                            <th>E-mail</th>
+                            <th>Contact No.</th>
+                            <th>Address</th>
+                        </tr>
+                    </thead>
+                    
+                    <tfoot>
+                        <tr>
+                            <th>Member ID</th>
+                            <th>Username</th>
+                            <th>Password</th>
+                            <th>Last Name</th>
+                            <th>First Name</th>
+                            <th>Middle Name</th>
+                            <th>Validation of Membership</th>
+                            <th>Expiration of Membership</th>
+                            <th>E-mail</th>
+                            <th>Contact No.</th>
+                            <th>Address</th>
+                        </tr>
+                    </tfoot>
+                 
+                    <tbody>
+                        
+                        <!--?php
+                            $serverName = "NOMSEO"; //serverName\instanceName
+
+                            // Since UID and PWD are not specified in the $connectionInfo array,
+                            // The connection will be attempted using Windows Authentication.
+                            $connectionInfo = array( "Database"=>"HOTELDB", "UID"=>"sa", "PWD"=>"mpv08271996");
+                            $conn = sqlsrv_connect( $serverName, $connectionInfo);
+
+                            if( $conn ) {
+                               
+                            }
+                            else{
+                                echo "Connection could not be established.<br />";
+                                die( print_r( sqlsrv_errors(), true));
+                            }
+                           
+                            $stmt = sqlsrv_query($conn,'{CALL SP_DISPLAYROOM}');
+                        
+                            while ($rs = sqlsrv_fetch_array($stmt)) {
+										
+								echo "<tr>
+                                	   <td>".$rs['RoomID']."</td>
+                                        <td>".$rs['RoomNo']."</td>
+                                        <td>".$rs['RoomType']."</td>
+                                        <td>".$rs['Price']."</td>
+                                        <td>".$rs['Rate']."</td>
+                                        <td>".$rs['RoomDescription']."</td>
+                                        <td><i class='mdi-content-add-circle'></td>
+                                    </tr>";
+			
+                            }
+                        ?-->
+                        
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+
+           
+          </div>
+          <div class="container">
+
+          <div id="mail-app" class="section">
+          <!-- Floating Action Button -->
+            <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+                <a href="#modal1" class="btn-floating btn-large grey darken-4 modal-trigger">
+                  <i class="large mdi-content-add pink-text"></i>
+                </a>
+            </div>
+            <!-- Floating Action Button -->
+          <div id="modal1" class="modal">
+              <div class="modal-content">
+                <nav class="pink">
+                  <div class="nav-wrapper">
+                    <div class="left col s12 m5 l5">
+                      <ul>
+                        <li><a href="#!" class="email-menu"><i class="modal-action modal-close  mdi-hardware-keyboard-backspace"></i></a>
+                        </li>
+                        <li><a href="#!" class="email-type">ADD Member</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col s12 m7 l7 hide-on-med-and-down">
+                       
+                      
+                    </div>
+
+                  </div>
+                </nav>
+              </div>
+              <div class="model-email-content">
+                   <div class="row">
+              <div class="col s12">
+              <div class="input-field col s6">
+                      <i class="mdi-social-person prefix"></i>
+                      <input id="room_number" type="text" class="validate">
+                      <label for="first_name">Member ID:</label>
+                  </div> 
+                </div>
+
+
+                <div class="row col s12"> 
+                  <div class="input-field col s5">
+                      <i class="mdi-social-person-outline  prefix"></i>
+                      <input id="last_name" type="text" class="validate">
+                      <label for="last_name">Username:</label>
+                  </div> 
+                    
+                  <div class="input-field col s5">
+                      <i class="mdi-hardware-security  prefix"></i>
+                      <input id="last_name" type="text" class="validate">
+                      <label for="last_name">Password:</label>
+                  </div> 
+                </div>    
+                    
+                
+                  <div class="row col s12"> 
+                  <div class="input-field col s4">
+                      <i class="mdi-action-account-circle prefix"></i>
+                      <input id="last_name" type="text" class="validate">
+                      <label for="last_name">Last Name:</label>
+                  </div>  
+
+
+                  <div class="input-field col s4">
+                      <i class="material-icons prefix"></i>
+                      <input id="first_name" type="text" class="validate">
+                      <label for="first_name">First Name:</label>
+                  </div>  
+
+                  <div class="input-field col s4">
+                      <i class="material-icons prefix"></i>
+                      <input id="middle_name" type="text" class="validate">
+                      <label for="middle_name">Middle Name:</label>
+                  </div>
+               </div>
+
+                <div class="row s12"><!--SECOND ROW STARTS HERE-->
+
+
+                <div class="input-field col s6">
+                  <i class="mdi-action-assignment-ind prefix"></i>
+                  <input name="join_date" type="date" class="datepicker">
+                  <label for="join_date">Date Joined:</label>
+                </div>
+
+                <div class="input-field col s6">
+                  <i class="mdi-action-assignment-late prefix"></i>
+                  <input name="expiration_date" type="date" class="datepicker ">
+                  <label for="expiration_date">Expiration Date:</label>
+                </div>
+              </div>
+
+                <div class="row">   
+                <div class="col s12">
+                  <div class="input-field col s6">
+                          <i class="mdi-communication-email prefix"></i>
+                          <input id="middle_name" type="text" class="validate">
+                          <label for="middle_name">E-mail:</label>
+                      </div>
+                    <div class="input-field col s6">
+                          <i class="mdi-communication-phone prefix left"></i>
+                          <input id="middle_name" type="text" class="validate">
+                          <label for="middle_name">Contact No:</label>
+                      </div>
+                    </div>
+                        
+                    <div class="row">     
+                    <div class="input-field col s12">
+                          <i class="mdi-maps-place prefix"></i>
+                          <input id="middle_name" type="text" class="validate">
+                          <label for="middle_name">Address:</label>
+                      </div>
+                    </div>
+                </div>
+              </div>
+                  <ul class="right">
+                         
+                        <li><input class="input-field btn center grey darken-4 pink-text" type="submit" name="submit" value="ADD">
+                        </li>
+                      </ul>
+            </div>
+              </div>
+          </div>
+        </div>
+        <!--end container-->
+
+      </section>
+      <!-- END CONTENT -->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- START RIGHT SIDEBAR NAV-->
+      <aside id="right-sidebar-nav">
+        <ul id="chat-out" class="side-nav rightside-navigation">
+            <li class="li-hover">
+            <a href="#" data-activates="chat-out" class="chat-close-collapse right"><i class="mdi-navigation-close"></i></a>
+            <div id="right-search" class="row">
+                <form class="col s12">
+                    <div class="input-field">
+                        <i class="mdi-action-search prefix"></i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Search</label>
+                    </div>
+                </form>
+            </div>
+            </li>
+            <li class="li-hover">
+                <ul class="chat-collapsible" data-collapsible="expandable">
+                <li>
+                    <div class="collapsible-header teal white-text active"><i class="mdi-social-whatshot"></i>Recent Activity</div>
+                    <div class="collapsible-body recent-activity">
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-action-add-shopping-cart"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="#">just now</a>
+                                <p>Jim Doe Purchased new equipments for zonal office.</p>
                             </div>
                         </div>
-                    <ul class="collapsible black-text" data-collapsible="accordion">
-    <li>
-        <div class="collapsible-header "><img class="responsive-img left" src="../../images/registerSmall.png"><span class="">Registration</span></div>
-      <div class="collapsible-body"><a href="#" data-activates="guestR">Guest</a></div>
-    </li>
-    <li>
-      <div class="collapsible-header "><img class="responsive-img left" src="../../images/eventSmall.png">Event</div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
-    <li>
-      <div class="collapsible-header "><img class="responsive-img left" src="../../images/settingsTSmall.png">Settings</div>
-      <div class="collapsible-body"><a href="#" data-activates="room">ADD ROOM</a></div>
-      <div class="collapsible-body"><a href="#" data-activates="function">ADD FUNCTION ROOM</a></div>
-      <div class="collapsible-body"><a href="#" data-activates="Amenities">ADD AMENITIES</a></div>
-    </li>
-                    </ul>
-                    
-                    
-                </div>
-        </nav>
-        </div>
-        
-       <div class=' container' style="width:50%;">
-    <form class="col s5 center" method="post" action="hotelregi.php">
-      <div class="row s12">
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-device-airplanemode-on"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="#">Yesterday</a>
+                                <p>Your Next flight for USA will be on 15th August 2015.</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-action-settings-voice"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="#">5 Days Ago</a>
+                                <p>Natalya Parker Send you a voice mail for next conference.</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-action-store"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="#">Last Week</a>
+                                <p>Jessy Jay open a new store at S.G Road.</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-action-settings-voice"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="#">5 Days Ago</a>
+                                <p>Natalya Parker Send you a voice mail for next conference.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header light-blue white-text active"><i class="mdi-editor-attach-money"></i>Sales Repoart</div>
+                    <div class="collapsible-body sales-repoart">
+                        <div class="sales-repoart-list  chat-out-list row">
+                            <div class="col s8">Target Salse</div>
+                            <div class="col s4"><span id="sales-line-1"></span>
+                            </div>
+                        </div>
+                        <div class="sales-repoart-list chat-out-list row">
+                            <div class="col s8">Payment Due</div>
+                            <div class="col s4"><span id="sales-bar-1"></span>
+                            </div>
+                        </div>
+                        <div class="sales-repoart-list chat-out-list row">
+                            <div class="col s8">Total Delivery</div>
+                            <div class="col s4"><span id="sales-line-2"></span>
+                            </div>
+                        </div>
+                        <div class="sales-repoart-list chat-out-list row">
+                            <div class="col s8">Total Progress</div>
+                            <div class="col s4"><span id="sales-bar-2"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header red white-text"><i class="mdi-action-stars"></i>Favorite Associates</div>
+                    <div class="collapsible-body favorite-associates">
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Eileen Sideways</p>
+                                <p class="place">Los Angeles, CA</p>
+                            </div>
+                        </div>
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Zaham Sindil</p>
+                                <p class="place">San Francisco, CA</p>
+                            </div>
+                        </div>
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img offline-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Renov Leongal</p>
+                                <p class="place">Cebu City, Philippines</p>
+                            </div>
+                        </div>
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Weno Carasbong</p>
+                                <p>Tokyo, Japan</p>
+                            </div>
+                        </div>
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img offline-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Nusja Nawancali</p>
+                                <p class="place">Bangkok, Thailand</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                </ul>
+            </li>
+        </ul>
+      </aside>
+      <!-- LEFT RIGHT SIDEBAR NAV-->
 
-        <div class="input-field col s4">
-          <i class="material-icons prefix">account_circle</i>
-          <input name="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
-        </div>
-
-        <div class="input-field col s4">
-          <input name="middle_name"type="text" class="validate">
-          <label for="middle_name">Middle Name</label>
-   	    </div>
-
-
-        <div class="input-field col s4">
-          <input name="first_name"type="text" class="validate">
-          <label for="first_name">First Name</label>
-   	    </div>
-      </div><!--END OF first row-->
-
-      <div class="row s12"><!--SECOND ROW STARTS HERE-->
-
-
-        <div class="input-field col s6">
-          <i class="material-icons prefix">perm_contact_calendar</i>
-          <input name="join_date" type="date" class="datepicker ">
-          <label for="join_date">Date Joined</label>
-        </div>
-
-        <div class="input-field col s6">
-          <i class="material-icons prefix">perm_contact_calendar</i>
-          <input name="expiration_date" type="date" class="datepicker ">
-          <label for="expiration_date">Expiration Date</label>
-        </div>
-      </div><!--SECOND ROW STARTS HERE-->
-
-      <div class="row s12"><!--THIRD ROW STARTS HERE-->
-        <div class="input-field col s6">
-          <i class="material-icons prefix">perm_identity</i>
-          <input name="user_name" type="text" class="validate ">
-          <label for="user_name">Username</label>
-        </div>      	
-
-        <div class="input-field col s6">
-          <i class="material-icons prefix">lock</i>
-          <input name="pass_word" type="password" class="validate ">
-          <label for="pass_word">Password</label>
-        </div>  
-
-      </div>   <!--THIRD ROW ENDS HERE-->
-
-      <div class="row s12"><!--FOURTH ROW STARTS HERE-->
-      	<div class="input-field col s6">
-          <i class="material-icons prefix">email</i>
-          <input name="email" type="email" class="validate ">
-          <label for="email">Email</label>
-     	</div>  
-
-		<div class="input-field col s6">
-          <i class="material-icons prefix">phone</i>
-          <input name="contact_phone" type="text" class="validate ">
-          <label for="contact_phone">Contact</label>
-     	</div>  
-      </div> <!--FOURTH ROW ENDS HERE-->
-
-   <div class="row s12"><!--FIFTH ROW STARTS HERE-->
-      	<div class="input-field col s12">
-          <i class="material-icons prefix">location_on</i>
-          <input name="address" type="text" class="validate ">
-          <label for="address">Address</label>
-     	</div>  
-	</div><!--FIFTH ROW ENDS HERE-->
-
-   <div class="row s12"><!--FIFTH ROW STARTS HERE-->
-      	<div class="input-field col s6">
-          <i class="material-icons prefix">payment</i>
-          <input name="acc_balance" type="text" class="validate ">
-          <label for="acc_balance">Account Balance</label>
-     	</div> 
-
-     	<div class="input-field col s6">
-          <input name="acc_rewards" type="text" class="validate ">
-          <label for="acc_rewards">Account Rewards</label>
-     	</div>   
-	</div><!--FIFTH ROW ENDS HERE-->
-
-		 <button class="btn waves-effect waves-light right" type="submit" name="action">Submit
-		    <i class="material-icons right">send</i>
-		 </button>     <!--REGISTER THE USER -->
-    </form>
- 
-
- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Register as Visitor</a>
- <div id="modal1" class="modal"> <!--OPEN A MODAL FOR THE REGISTRATION OF VISITOR-->
-    <div class="modal-content">
-      <h4>Visitor Registration</h4>
-        <form class="col s5 center" method="post" action="visregi.php">
-    <div class="row s12">
-    	<div class="input-field col s4">
-          <i class="material-icons prefix">account_circle</i>
-          <input name="vis_ln" type="text" class="validate">
-          <label for="vis_ln">Last Name</label>
-        </div>
-
-    <div class="input-field col s4">
-          <i class="material-icons prefix">account_circle</i>
-          <input name="vis_mn" type="text" class="validate">
-          <label for="vis_mn">Middle Name</label>
-        </div>
-    <div class="input-field col s4">
-          <i class="material-icons prefix">account_circle</i>
-          <input name="vis_fn" type="text" class="validate">
-          <label for="vis_fn">First Name</label>
     </div>
-    </div>
+    <!-- END WRAPPER -->
 
-    <div class="row s12">
-    	<div class="input-field col s6">
-          <i class="material-icons prefix">email</i>
-          <input name="vis_email" type="text" class="validate">
-          <label for="vis_email">Email</label>
-        </div>
-
-		<div class="input-field col s6">
-          <i class="material-icons prefix">phone</i>
-          <input name="vis_contact" type="text" class="validate">
-          <label for="vis_contact">Contact</label>
-        </div>
-    </div>    
-<div class="row s12">
-	<div class="input-field col s6 offset-s4">	
-    <button class="btn waves-effect waves-light center" type="submit" name="action">Submit
-    	<i class="material-icons right">send</i>
-    </div>
- </div>
-  	</button><!--REGISTER AS VISITOR-->	
-    </div><!-- END OF MODAL's CONTAINER-->
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
   </div>
+  <!-- END MAIN -->
 
-</form>
-  </div>
-            
-            
-        <!---->
- <script>
-      $(document).ready(function(){
-          // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-      $('.modal-trigger').leanModal();
-      $(".button-collapse").sideNav();
-      $('.slider').slider({full_width: true});
-      $('ul.tabs').tabs('select_tab', 'tab_id');
-    $('.collapsible').collapsible({
-      accordion : true // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-    });
-          $('select').material_select();
-      
 
-        });
-$('.dropdown-button').dropdown({
-      inDuration: 300,
-      outDuration: 225,
-      constrain_width: true, // Does not change width of dropdown to that of the activator
-      hover: false, // Activate on hover
-      gutter: 0, // Spacing from edge
-      belowOrigin: true, // Displays dropdown below the button
-      alignment: 'center' // Displays dropdown with edge aligned to the left of button
-    }
-  );
-     $('.datepicker').pickadate({
-    selectMonths: true, // Creates a dropdown to control month
-    selectYears: 15 // Creates a dropdown of 15 years to control year
-  });
-      
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START FOOTER -->
+  <footer class="page-footer pink darken-2">
+    <div class="footer-copyright pink darken-2">
+      <div class="container pink darken-2">
+        <span>Copyright © 2015 <a class="grey-text text-lighten-4" href="http://themeforest.net/user/geekslabs/portfolio?ref=geekslabs" target="_blank">GeeksLabs</a> All rights reserved.</span>
+        <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="http://geekslabs.com/">GeeksLabs</a></span>
+        </div>
+    </div>
+  </footer>
+    <!-- END FOOTER -->
+
+
+
+    <!-- ================================================
+    Scripts
+    ================================================ -->
     
-                
-      </script>
-    </body>
+    <!-- jQuery Library -->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>    
+    <!--materialize js-->
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <!--prism-->
+    <script type="text/javascript" src="js/prism.js"></script>
+    <!--scrollbar-->
+    <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <!-- data-tables -->
+    <script type="text/javascript" src="js/plugins/data-tables/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/plugins/data-tables/data-tables-script.js"></script>
+    <!-- chartist -->
+    <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>   
+    
+    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+    <script type="text/javascript" src="js/plugins.js"></script>    
+</body>
+
+
+<!-- Mirrored from demo.geekslabs.com/materialize/v2.2/layout01/table-data.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 25 Feb 2016 14:12:04 GMT -->
 </html>
-        

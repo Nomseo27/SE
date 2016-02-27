@@ -66,14 +66,14 @@ if( $conn ) {
    $id = smartcounter($id);
     sqlsrv_free_stmt( $stmt);
 
-    $params= array(array($id,SQLSRV_PARAM_IN), array('FUNCTION',SQLSRV_PARAM_IN), array($_POST['roomno'],SQLSRV_PARAM_IN), array($_POST['Price'],SQLSRV_PARAM_IN),  array($_POST['rate'],SQLSRV_PARAM_IN), array($_POST['capacity'],SQLSRV_PARAM_IN));
+    $params= array(array($id,SQLSRV_PARAM_IN), array('FUNCTION',SQLSRV_PARAM_IN), array($_POST['roomno'],SQLSRV_PARAM_IN), array($_POST['Price'],SQLSRV_PARAM_IN),  array($_POST['rate'],SQLSRV_PARAM_IN), array($_POST['Capacity'],SQLSRV_PARAM_IN));
 
     $stmt = sqlsrv_query($conn,'{CALL SP_FUNCTION(?, ?, ?, ?, ?, ?)}', $params);
 
     if( $stmt === false) {
         die( print_r( sqlsrv_errors(), true) );
     }
-    else echo "inserted"
+    else echo header("Location: function.php");
     //if correct redirect to a admin page
    
 ?>
