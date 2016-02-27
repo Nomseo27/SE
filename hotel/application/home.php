@@ -32,7 +32,11 @@
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <div class="right hide-on-med-and-down valign-wrapper">
                     <!-- Dropdown Trigger -->
+<<<<<<< HEAD
                   <a class='dropdown-button btn truncate center teal' href='#' data-activates='dropdown1' data-beloworigin="true" style="margin-right: 20px;top:0px;"><img src="../../images/login.jpg" alt="" class="circle responsive-img lext" style="max-width: 20px; margin-right: 20px;margin-top:5px;">User</a>
+=======
+                  <a class='dropdown-button btn truncate center' href='#' data-activates='dropdown1' data-beloworigin="true" style="margin-right: 20px;top:0px;"><img src="../../images/login.jpg" alt="" class="circle responsive-img lext" style="max-width: 20px; margin-right: 20px;margin-top:5px;">User</a>
+>>>>>>> refs/remotes/origin/mon
 
                   <!-- Dropdown Structure -->
                   <ul id='dropdown1' class='dropdown-content'>
@@ -230,7 +234,16 @@
 <div id="table-datatables">
               <h4 class="header">DataTables example</h4>
               <div class="row">
+<<<<<<< HEAD
                 <div class="col s12">
+=======
+                <div class="col s12 m4 l3">
+                  <p>DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function.</p>
+
+                  <p>Searching, ordering, paging etc goodness will be immediately added to the table, as shown in this example.</p>
+                </div>
+                <div class="col s12 m8 l9">
+>>>>>>> refs/remotes/origin/mon
                   <table id="data-table-simple" class="responsive-table display" cellspacing="0">
                     <thead>
                         <tr>
@@ -327,7 +340,14 @@ $('.dropdown-button').dropdown({
       </script>
 
  <!-- jQuery Library -->
+<<<<<<< HEAD
    
+=======
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>    
+    <!--materialize js-->
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <!--prism-->
+>>>>>>> refs/remotes/origin/mon
     <script type="text/javascript" src="js/prism.js"></script>
     <!--scrollbar-->
     <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
