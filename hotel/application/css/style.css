@@ -581,7 +581,15 @@ ul.side-nav.leftside-navigation:hover {
   /*overflow-y:hidden;*/
 }
 ul.side-nav.leftside-navigation li.user-details {
+<<<<<<< HEAD
   background: url(../../../images/bg.jpg) no-repeat center center;
+=======
+<<<<<<< HEAD
+  background: url(../../../images/bg.jpg) no-repeat center center;
+=======
+  background: url(../images/user-bg.jpg) no-repeat center center;
+>>>>>>> refs/remotes/origin/mon
+>>>>>>> refs/remotes/origin/master
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

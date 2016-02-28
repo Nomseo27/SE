@@ -68,7 +68,11 @@
                       <li><h1 class="logo-wrapper"><a href="index-2.html" class="brand-logo darken-1"><img src="images/nfctellogo.png"></a> <span class="logo-text">Materialize</span></h1></li>
                     </ul>
                     <ul class="right hide-on-med-and-down">                        
+<<<<<<< HEAD
                         <li><a href="events.php" class="waves-effect waves-block waves-light pink-text"><i class="mdi-social-cake"></i></a>
+=======
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen pink-text"><i class="mdi-social-cake"></i></a>
+>>>>>>> refs/remotes/origin/master
                         </li>
                         <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light"><i class="mdi-social-person-add pink-text"></i></a>
                         </li>                        
@@ -122,9 +126,13 @@
             </li>
             <li class="bold"><a href="app-email.html" class="waves-effect waves-pink pink-text"><i class="mdi-communication-email"></i> Mailbox <span class="new badge">4</span></a>
             </li>
+<<<<<<< HEAD
             <li class="bold"><a href="member.php" class="waves-effect waves-pink pink-text"><i class="mdi-social-person-add "></i> Registration</a>
             </li>
             <li class="bold"><a href="guest.php" class="waves-effect waves-pink pink-text"><i class="mdi-maps-directions-walk"></i> Guest</a>
+=======
+            <li class="bold"><a href="app-calendar.html" class="waves-effect waves-pink pink-text"><i class="mdi-social-person-add "></i> Registration</a>
+>>>>>>> refs/remotes/origin/master
             </li>
             <li class="no-padding">
                 <ul class="collapsible collapsible-accordion grey darken-4">
@@ -133,9 +141,15 @@
                             <ul>
                                 <li><a href="bedroom.php" class="pink-text text-lighten-4">Bed Rooms</a>
                                 </li>                                        
+<<<<<<< HEAD
                                 <li><a href="function.php" class="pink-text text-lighten-4">Function Rooms</a>
                                 </li>
                                 <li><a href="amenities.php" class="pink-text text-lighten-4">Amenities</a>
+=======
+                                <li><a href="css-icons.html" class="pink-text text-lighten-4">Function Rooms</a>
+                                </li>
+                                <li><a href="css-shadow.html" class="pink-text text-lighten-4">Amenities</a>
+>>>>>>> refs/remotes/origin/master
                                 </li>
                             </ul>
                         </div>
@@ -151,11 +165,19 @@
                         </div>
                     </li>
                     <li class="bold"><a class="collapsible-header waves-effect waves-pink grey darken-4 pink-text"><i class="mdi-notification-event-note l"></i> Reports</a>
+<<<<<<< HEAD
                         <div class="collapsible-body grey darken-3">
                             <ul>
                                 <li><a href="table-basic.html" class="pink-text text-lighten-4">Sales Report</a>
                                 </li>
                                 <li><a href="table-data.html" class="pink-text text-lighten-4">Data Tables</a>
+=======
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="table-basic.html" class="pink-text text-lighten-4">Sales Report</a>
+                                </li>
+                                <li class="active"><a href="table-data.html" class="pink-text text-lighten-4">Data Tables</a>
+>>>>>>> refs/remotes/origin/master
                                 </li>
                             </ul>
                         </div>
@@ -246,6 +268,7 @@
                             $stmt = sqlsrv_query($conn,'{CALL SP_DISPLAYROOM}');
                         
                             while ($rs = sqlsrv_fetch_array($stmt)) {
+<<<<<<< HEAD
 										$rid = $rs['RoomID'];
                                         $rno = $rs['RoomNo'];
                                         $rtype = $rs['RoomType'];
@@ -263,6 +286,17 @@
                                         <td><input class='input-field btn center grey darken-4 pink-text' type='submit' name='submit' value='edit | delete'>
                                             <i class='mdi-editor-mode-edit'></i>
                                             </a></td>
+=======
+										
+								echo "<tr>
+                                	   <td>".$rs['RoomID']."</td>
+                                        <td>".$rs['RoomNo']."</td>
+                                        <td>".$rs['RoomType']."</td>
+                                        <td>".$rs['Price']."</td>
+                                        <td>".$rs['Rate']."</td>
+                                        <td>".$rs['RoomDescription']."</td>
+                                        <td><i class='mdi-content-add-circle'></td>
+>>>>>>> refs/remotes/origin/master
                                     </tr>";
 			
                             }
@@ -273,6 +307,11 @@
                 </div>
               </div>
             </div>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> refs/remotes/origin/master
            
           </div>
           <div class="container">
@@ -516,6 +555,7 @@
     <!-- ================================================
     Scripts
     ================================================ -->
+<<<<<<< HEAD
     <script type="text/javascript">
         function getINFO(id, no, type, price, rate, des){
             alert('here');
@@ -526,6 +566,9 @@
             
         }
     </script>
+=======
+    
+>>>>>>> refs/remotes/origin/master
     <!-- jQuery Library -->
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>    
     <!--materialize js-->

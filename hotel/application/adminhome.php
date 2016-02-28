@@ -68,9 +68,14 @@
                       <li><h1 class="logo-wrapper"><a href="index-2.html" class="brand-logo darken-1"><img src="images/nfctellogo.png"></a> <span class="logo-text">Materialize</span></h1></li>
                     </ul>
                     <ul class="right hide-on-med-and-down">                        
+<<<<<<< HEAD
                         <li><a href="events.php" class="waves-effect waves-block waves-light pink-text"><i class="mdi-social-cake"></i></a>
                         </li>
                     
+=======
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen pink-text"><i class="mdi-social-cake"></i></a>
+                        </li>
+>>>>>>> refs/remotes/origin/master
                         <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light"><i class="mdi-social-person-add pink-text"></i></a>
                         </li>                        
                         <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light"><i class="mdi-social-location-city pink-text"></i></a>
@@ -123,9 +128,13 @@
             </li>
             <li class="bold"><a href="app-email.html" class="waves-effect waves-pink pink-text"><i class="mdi-communication-email"></i> Mailbox <span class="new badge">4</span></a>
             </li>
+<<<<<<< HEAD
             <li class="bold"><a href="member.php" class="waves-effect waves-pink pink-text"><i class="mdi-social-person-add "></i> Registration</a>
             </li>
             <li class="bold"><a href="guest.php" class="waves-effect waves-pink pink-text"><i class="mdi-maps-directions-walk"></i> Guest</a>
+=======
+            <li class="bold"><a href="app-calendar.html" class="waves-effect waves-pink pink-text"><i class="mdi-social-person-add "></i> Registration</a>
+>>>>>>> refs/remotes/origin/master
             </li>
             <li class="no-padding">
                 <ul class="collapsible collapsible-accordion grey darken-4">
@@ -152,11 +161,19 @@
                         </div>
                     </li>
                     <li class="bold"><a class="collapsible-header waves-effect waves-pink grey darken-4 pink-text"><i class="mdi-notification-event-note l"></i> Reports</a>
+<<<<<<< HEAD
                         <div class="collapsible-body grey darken-3">
                             <ul>
                                 <li><a href="table-basic.html" class="pink-text text-lighten-4">Sales Report</a>
                                 </li>
                                 <li><a href="table-data.html" class="pink-text text-lighten-4">Data Tables</a>
+=======
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="table-basic.html" class="pink-text text-lighten-4">Sales Report</a>
+                                </li>
+                                <li class="active"><a href="table-data.html" class="pink-text text-lighten-4">Data Tables</a>
+>>>>>>> refs/remotes/origin/master
                                 </li>
                             </ul>
                         </div>
@@ -182,6 +199,10 @@
                 <h5 class="breadcrumbs-title">Dashboard</h5>
                 <ol class="breadcrumb">
                     <li><a href="index-2.html" class="pink-text">Dashboard</a></li>
+<<<<<<< HEAD
+=======
+                    
+>>>>>>> refs/remotes/origin/master
                 </ol>
               </div>
             </div>
@@ -196,7 +217,11 @@
 
             <!--DataTables example Row grouping-->
             <div id="row-grouping" class="section">
+<<<<<<< HEAD
               <h4 class="header">UNRENDERED RESERVATIONS</h4>
+=======
+              <h4 class="header">Unrendered Reservations</h4>
+>>>>>>> refs/remotes/origin/master
               
                 <div class="col s12 m8 l9">
                   <table id="data-table-simple" class="display" cellspacing="0" width="100%">
@@ -206,11 +231,19 @@
                             <th>Customer ID</th>
                             <th>Room No</th>
                             <th>Type</th>
+<<<<<<< HEAD
                             <th>Start Use</th>
                             <th>End Use</th>
                             <th>Reserve Date</th>
                             <th>Description</th>
                             <th>Email</th>
+=======
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Date Reserved</th>
+                            <th>Description</th>
+                            <th>Send Instruction</th>
+>>>>>>> refs/remotes/origin/master
                         </tr>
                     </thead>
                     
@@ -220,11 +253,19 @@
                             <th>Customer ID</th>
                             <th>Room No</th>
                             <th>Type</th>
+<<<<<<< HEAD
                             <th>Start Use</th>
                             <th>End Use</th>
                             <th>Reserve Date</th>
                             <th>Description</th>
                             <th>Email</th>
+=======
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Date Reserved</th>
+                            <th>Description</th>
+                            <th>Send Instruction</th>
+>>>>>>> refs/remotes/origin/master
                         </tr>
                     </tfoot>
                  
@@ -252,7 +293,11 @@
 										
 								echo "<tr>
                                 	   <td>".$rs['ReservationID']."</td>
+<<<<<<< HEAD
                                 	   <td>".$rs['CustomerID']."</td>
+=======
+                                        <td>".$rs['CustomerID']."</td>
+>>>>>>> refs/remotes/origin/master
                                         <td>".$rs['RoomNo']."</td>
                                         <td>".$rs['ReservationType']."</td>
                                         <td>".$rs['RsrvDateStart']."</td>

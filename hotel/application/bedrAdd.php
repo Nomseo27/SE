@@ -73,7 +73,19 @@ if( $conn ) {
     if( $stmt === false) {
         die( print_r( sqlsrv_errors(), true) );
     }
+<<<<<<< HEAD
     else echo header("Location: bedroom.php");
     //if correct redirect to a admin page
 
+=======
+<<<<<<< HEAD
+    else echo header("Location: adminhome.php");
+    //if correct redirect to a admin page
+
+=======
+    else echo "inserted"
+    //if correct redirect to a admin page
+   
+>>>>>>> refs/remotes/origin/mon
+>>>>>>> refs/remotes/origin/master
 ?>
